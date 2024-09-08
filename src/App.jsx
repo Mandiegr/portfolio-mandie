@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 import About  from './components/About'
-import Header from './components/Header'
 import { Home } from './components/Home'
-import Project from './components/projects'
+import Project from './components/Projects'
 import Contact from './components/Contact'
+import Navbar from './components/NavBar'
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <div>
-        <Header />
+        <Navbar />
         <Section id="home">
           <Home />
         </Section>
