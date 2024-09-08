@@ -1,0 +1,94 @@
+import styled from 'styled-components';
+
+export const AboutContainer = styled.section`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+  box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 2rem;
+  }
+`;
+
+export const ImageContainer = styled.div`
+  text-align: center;
+  width: 50%;
+  height: auto;
+  padding-top: 40px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    text-align: center;
+    top: -90px;
+  }
+`;
+
+export const Title = styled.h2`
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+`;
+
+export const List = styled.ul`
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 1rem;
+  display: ${({ isVisible }) => (isVisible ? 'block' : 'none')};
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+`;
+
+export const ListItem = styled.li`
+  margin-bottom: 0.5rem;
+`;
+
+export const TextContainer = styled.div`
+  width: 50%;
+  color: white;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    text-align: center;
+  }
+`;
+
+export const AboutImage = styled.img`
+  width: 60%;
+  height: auto;
+  object-fit: cover;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+`;
+
+export const AboutMeTitle = styled.h2`
+  margin-top: 2rem;
+  font-size: 4rem;
+  color: white;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+`;
+
+export const AboutText = styled.p`
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+`;
