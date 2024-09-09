@@ -29,20 +29,24 @@ export const NameContainer = styled.div`
   color: white;
   padding-left: 2rem;
   text-align: center;
-
   p {
-    font-size: 109px;
+    font-size: 116px;
+
+    @media (max-width: 1024px) {
+      font-size: 100px;
+  }
 
     @media (max-width: 768px) {
-      font-size: 70px;
+      font-size: 80px;
     }
 
     @media (max-width: 491px) {
-      font-size: 60px;
+      font-size: 70px;
       padding-left: 0;
       text-align: center;
     }
   }
+  
 
   @media (max-width: 491px) {
     position: static;
@@ -57,17 +61,21 @@ export const NameContainer = styled.div`
 export const TextContainer = styled.div`
   position: absolute;
   flex-direction: column;
-  top: 70%;
+  top: 60%;
   color: white;
   padding-left: 2rem;
   font-size: 20px;
   line-height: 1.5;
   margin-top: 3rem;
 
+
+ @media (min-width: 1024px) {
+  }
+
   @media (max-width: 768px) {
-    top: 80%;
+    top: 60%;
     font-size: 16px;
-    padding-left: 1rem;
+    padding: 1rem;
     margin-top: 2rem;
   }
 
@@ -114,8 +122,8 @@ export const IconContainer = styled.div`
   min-height: 60px;
   gap: 20px;
 
+
   @media (max-width: 491px) {
-  
     gap: 10px;
 
   }
@@ -125,7 +133,9 @@ export const IconContainer = styled.div`
 export const Icon = styled.div`
   font-size: 40px;
 
-@media (max-width: 491px) {
+  
+
+@media (max-width: 540px) {
   font-size: ${props => props.size || '20px'};
 
 
