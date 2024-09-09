@@ -14,7 +14,7 @@ import {
 const Projects = () => {
   const images = [
     {
-      src: 'https://i.pinimg.com/564x/8e/49/9e/8e499e636c15cd83a5ef8ea91d4bc605.jpg',
+      src: 'https://i.pinimg.com/564x/46/7a/ca/467acae6944588b20f759422034f4a09.jpg',
       alt: 'Eco-buy',
       title: 'Eco-buy',
       description: 's simply dummy text of the printing and typesetting industry.'
@@ -26,7 +26,7 @@ const Projects = () => {
       description: 's simply dummy text of the printing and typesetting industry.'
     },
     {
-      src: 'https://i.pinimg.com/736x/b1/20/88/b12088f8871b7be863befd6ac7a22e4d.jpg',
+      src: 'https://i.pinimg.com/564x/46/7a/ca/467acae6944588b20f759422034f4a09.jpg',
       alt: 'SocialM',
       title: 'SocialM',
       description: 's simply dummy text of the printing and typesetting industry.'
@@ -38,13 +38,31 @@ const Projects = () => {
       description: 's simply dummy text of the printing and typesetting industry.'
     },
     {
-      src: 'https://i.pinimg.com/564x/c7/3d/d4/c73dd4611e5edddb3f9a03408656e5c0.jpg',
+      src: 'https://i.pinimg.com/564x/46/7a/ca/467acae6944588b20f759422034f4a09.jpg',
       alt: 'Study',
       title: 'Study',
       description: 's simply dummy text of the printing and typesetting industry.'
     },
     {
-      src: 'https://i.pinimg.com/564x/cb/37/28/cb372833d2fa29bcd4233de3318c43b0.jpg',
+      src: 'https://i.pinimg.com/564x/46/7a/ca/467acae6944588b20f759422034f4a09.jpg',
+      alt: 'Projeto Proximo',
+      title: 'Projeto Proximo',
+      description: 's simply dummy text of the printing and typesetting industry.'
+    },
+    {
+      src: 'https://i.pinimg.com/564x/46/7a/ca/467acae6944588b20f759422034f4a09.jpg',
+      alt: 'Projeto Proximo',
+      title: 'Projeto Proximo',
+      description: 's simply dummy text of the printing and typesetting industry.'
+    },
+    {
+      src: 'https://i.pinimg.com/564x/46/7a/ca/467acae6944588b20f759422034f4a09.jpg',
+      alt: 'Projeto Proximo',
+      title: 'Projeto Proximo',
+      description: 's simply dummy text of the printing and typesetting industry.'
+    },
+    {
+      src: 'https://i.pinimg.com/564x/46/7a/ca/467acae6944588b20f759422034f4a09.jpg',
       alt: 'Projeto Proximo',
       title: 'Projeto Proximo',
       description: 's simply dummy text of the printing and typesetting industry.'
@@ -85,6 +103,7 @@ const Projects = () => {
       },
     ],
   };
+  
 
   return (
     <ProjectContainer>

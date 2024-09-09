@@ -6,30 +6,36 @@ export const ProjectContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   background-color: #19191b;
-  width: 100vw;
+  width: 100%;
 `;
 
 export const CarouselContainer = styled.div`
-  width: 90%;
+  width: 100%;
   box-sizing: border-box;
 
   @media (max-width: 430px) {
-    width: 100%;
-    padding: 40px;
+    padding: 20px;
   }
 `;
 
 export const ImagesContainer = styled.div`
-  width: 100vw;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
+  width: 100%;
   margin-bottom: 20px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 720px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const Title = styled.h1`
-  align-items: center;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 20px;
   color: white;
 
@@ -39,29 +45,21 @@ export const Title = styled.h1`
 `;
 
 export const Image = styled.img`
-  width: 320px;
-  height: 250px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
-  margin-left: 2.5rem;
 
-  @media (max-width: 853px) and (min-width: 344px) {
-    margin-left: 0;
+  @media (max-width: 1024px) {
+    width: 100%;
   }
-
-  @media (max-width: 721px) and (min-width: 560px) {
-   width: 500px;
-   margin-left: 0;
-  }
-  
 `;
 
 export const ImageCard = styled.div`
   padding: 10px;
   text-align: center;
 
-  @media (max-width: 720px) and (min-width: 540px) {
-    padding: 75px;
-
+  @media (max-width: 720px) {
+    padding: 20px;
   }
 `;
 
