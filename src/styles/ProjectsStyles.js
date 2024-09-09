@@ -47,11 +47,21 @@ export const Image = styled.img`
   @media (max-width: 853px) and (min-width: 344px) {
     margin-left: 0;
   }
+
+  @media (max-width: 720px) and (min-width: 560px) {
+   width: 500px;
+  }
+  
 `;
 
 export const ImageCard = styled.div`
   padding: 10px;
   text-align: center;
+
+  @media (max-width: 720px) and (min-width: 540px) {
+    padding: 75px;
+
+  }
 `;
 
 export const ImageTitle = styled.h3`
