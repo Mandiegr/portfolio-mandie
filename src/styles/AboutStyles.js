@@ -10,10 +10,16 @@ export const AboutContainer = styled.section`
   padding: 5rem;
   box-sizing: border-box;
 
-  @media (max-width: 768px) {
+  @media (max-width: 884px) {
     flex-direction: column;
-    padding: 2rem;
+    justify-content: center; 
+     padding: 2rem;
   }
+  @media (max-width: 490px) {
+     padding: 2rem;
+  }
+
+ 
 `;
 
 export const ImageContainer = styled.div`
@@ -22,7 +28,7 @@ export const ImageContainer = styled.div`
   height: auto;
   padding-top: 40px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 884px) {
     width: 100%;
     text-align: center;
     top: -90px;
@@ -38,28 +44,17 @@ export const Title = styled.h2`
   cursor: pointer;
 `;
 
-export const List = styled.ul`
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-top: 1rem;
-  display: ${({ isVisible }) => (isVisible ? 'block' : 'none')};
-
-  @media (max-width: 768px) {
-    font-size: 1rem;
-  }
-`;
-
-export const ListItem = styled.li`
-  margin-bottom: 0.5rem;
-`;
 
 export const TextContainer = styled.div`
   width: 50%;
   color: white;
-
-  @media (max-width: 768px) {
+ 
+  @media (max-width: 884px) {
     width: 100%;
-    text-align: center;
+  }
+  @media (max-width: 375px) {
+      padding-top: 50px;
+    
   }
 `;
 
@@ -68,8 +63,14 @@ export const AboutImage = styled.img`
   height: auto;
   object-fit: cover;
 
-  @media (max-width: 768px) {
-    width: 80%;
+  @media (max-width: 884px) {
+    width: 50%;
+  }
+  @media (max-width: 540px) {
+    width: 50%;
+  }
+  @media (max-width: 375px) {
+    width: 50%;
   }
 `;
 
@@ -77,9 +78,16 @@ export const AboutMeTitle = styled.h2`
   margin-top: 2rem;
   font-size: 4rem;
   color: white;
-
-  @media (max-width: 768px) {
+  @media (max-width: 884px) {
     font-size: 2.5rem;
+  }
+  @media (max-width: 540px) {
+   font-size: 2rem;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 1.5rem;
+    margin-top: 1rem;
   }
 `;
 
@@ -87,8 +95,11 @@ export const AboutText = styled.p`
   font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 1rem;
-
+  letter-spacing: 0;
   @media (max-width: 768px) {
     font-size: 1rem;
+  }
+  @media (max-width: 375px) {
+    text-align: justify;
   }
 `;
