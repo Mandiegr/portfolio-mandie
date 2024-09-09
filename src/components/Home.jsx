@@ -1,4 +1,5 @@
-import { Banner, NameContainer, TextContainer, Button } from '../styles/HomeStyles';
+import { Banner, NameContainer, TextContainer, Button, IconContainer, Icon } from '../styles/HomeStyles';
+import { SiNextdotjs, SiJavascript, SiReact, SiTypescript, SiNodedotjs, SiFirebase, SiMongodb, SiMysql, SiSqlite, SiPython } from 'react-icons/si';
 
 export const Home = () => {
   return (
@@ -9,7 +10,19 @@ export const Home = () => {
       </NameContainer>
 
       <TextContainer>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h2>Main Languages:</h2>
+        <IconContainer>
+        <Icon as={SiJavascript}  />
+          <Icon as={SiReact}  />
+          <Icon as={SiTypescript}  />
+          <Icon as={SiNextdotjs}  />
+          <Icon as={SiNodedotjs}  />
+          <Icon as={SiFirebase}  />
+          <Icon as={SiMongodb}  />
+          <Icon as={SiSqlite}  />
+          <Icon as={SiMysql}  />
+          <Icon as={SiPython}  />
+        </IconContainer>
         <Button>Explore</Button>
       </TextContainer>
     </Banner>

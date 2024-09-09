@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import banner from '../../public/banner.png';
 
+
 export const Banner = styled.div`
   width: 100%;
   height: 100vh;
@@ -14,21 +15,20 @@ export const Banner = styled.div`
   flex-direction: column;
 
   @media (max-width: 768px) {
-    height: 80vh;
+    height: 100vh;
   }
 
   @media (max-width: 491px) {
-    height: 50vh;
+    height: 100vh;
   }
 `;
 
 export const NameContainer = styled.div`
   position: absolute;
-  top: 50%;
-  left: 65%;
-  transform: translateY(-50%);
+  top: 30%;
   color: white;
   padding-left: 2rem;
+  text-align: center;
 
   p {
     font-size: 109px;
@@ -38,7 +38,7 @@ export const NameContainer = styled.div`
     }
 
     @media (max-width: 491px) {
-      font-size: 40px;
+      font-size: 60px;
       padding-left: 0;
       text-align: center;
     }
@@ -58,8 +58,6 @@ export const TextContainer = styled.div`
   position: absolute;
   flex-direction: column;
   top: 70%;
-  left: 65%;
-  transform: translateY(-50%);
   color: white;
   padding-left: 2rem;
   font-size: 20px;
@@ -102,6 +100,34 @@ export const Button = styled.button`
   @media (max-width: 491px) {
     font-size: 12px;
     padding: 6px 12px;
-    margin-top: 20px;
+    margin-top: 30px;
+  }
+`;
+
+
+export const IconContainer = styled.div`
+  display: flex;
+  overflow-x: auto;
+  padding: 1rem 0;
+  white-space: nowrap;
+  align-items: center;
+  min-height: 60px;
+  gap: 20px;
+
+  @media (max-width: 491px) {
+  
+    gap: 10px;
+
+  }
+
+`;
+
+export const Icon = styled.div`
+  font-size: 40px;
+
+@media (max-width: 491px) {
+  font-size: ${props => props.size || '20px'};
+
+
   }
 `;
