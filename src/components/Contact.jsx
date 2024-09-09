@@ -18,7 +18,6 @@ const Contact = () => {
       <RightSide>
         <Title>Contacts</Title>
         <Description>
-          Entre em contato conosco através das seguintes informações:
         </Description>
         <ContactDetails>
           <Detail><strong>Telefone:</strong> +55 91 99184-3012</Detail>

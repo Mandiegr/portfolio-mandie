@@ -35,6 +35,11 @@ export const Title = styled.h1`
   font-size: 4rem;
   color: #ffffff;
   margin-bottom: 10px;
+
+  @media (max-width: 419px) {
+   
+    font-size: 2rem;
+    }
 `;
 
 export const Description = styled.p`
