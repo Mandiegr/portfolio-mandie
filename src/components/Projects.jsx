@@ -75,6 +75,7 @@ const Projects = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1281,
