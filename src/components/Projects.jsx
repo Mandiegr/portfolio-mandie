@@ -14,59 +14,33 @@ import {
 const Projects = () => {
   const images = [
     {
-      src: 'https://i.pinimg.com/564x/46/7a/ca/467acae6944588b20f759422034f4a09.jpg',
-      alt: 'Eco-buy',
-      title: 'Eco-buy',
-      description: 's simply dummy text of the printing and typesetting industry.'
+      src: '/task-manager.png',
+      alt: 'Task-manager',
+      title: 'Task-manager',
+      description: 'Task Manager: React and SqlLite in the backend',
+      link: 'https://tasks-manager-frontend.vercel.app/'
     },
     {
-      src: 'https://i.pinimg.com/564x/46/7a/ca/467acae6944588b20f759422034f4a09.jpg',
+      src: '/eco-buy.png',
+      alt: 'Eco-Buy',
+      title: 'Eco-Buy',
+      description: 'E-commerce: Nextjs, nodejs and Firebase',
+      link: 'https://eco-buy-phi.vercel.app/'
+    },
+    {
+      src: '/plannerA.png',
       alt: 'PlannerA',
       title: 'PlannerA',
-      description: 's simply dummy text of the printing and typesetting industry.'
+      description: 'This is simply dummy text of the printing and typesetting industry.',
+      link: 'https://agenda-vercel-21mk.vercel.app/'
     },
     {
-      src: 'https://i.pinimg.com/564x/46/7a/ca/467acae6944588b20f759422034f4a09.jpg',
-      alt: 'SocialM',
-      title: 'SocialM',
-      description: 's simply dummy text of the printing and typesetting industry.'
-    },
-    {
-      src: 'https://i.pinimg.com/564x/46/7a/ca/467acae6944588b20f759422034f4a09.jpg',
+      src: '/task-manager.png',
       alt: 'Task-Manager',
       title: 'Task-Manager',
-      description: 's simply dummy text of the printing and typesetting industry.'
+      description: 'This is simply dummy text of the printing and typesetting industry.',
+      link: 'https://example.com/task-manager'
     },
-    {
-      src: 'https://i.pinimg.com/564x/46/7a/ca/467acae6944588b20f759422034f4a09.jpg',
-      alt: 'Study',
-      title: 'Study',
-      description: 's simply dummy text of the printing and typesetting industry.'
-    },
-    {
-      src: 'https://i.pinimg.com/564x/46/7a/ca/467acae6944588b20f759422034f4a09.jpg',
-      alt: 'Projeto Proximo',
-      title: 'Projeto Proximo',
-      description: 's simply dummy text of the printing and typesetting industry.'
-    },
-    {
-      src: 'https://i.pinimg.com/564x/46/7a/ca/467acae6944588b20f759422034f4a09.jpg',
-      alt: 'Projeto Proximo',
-      title: 'Projeto Proximo',
-      description: 's simply dummy text of the printing and typesetting industry.'
-    },
-    {
-      src: 'https://i.pinimg.com/564x/46/7a/ca/467acae6944588b20f759422034f4a09.jpg',
-      alt: 'Projeto Proximo',
-      title: 'Projeto Proximo',
-      description: 's simply dummy text of the printing and typesetting industry.'
-    },
-    {
-      src: 'https://i.pinimg.com/564x/46/7a/ca/467acae6944588b20f759422034f4a09.jpg',
-      alt: 'Projeto Proximo',
-      title: 'Projeto Proximo',
-      description: 's simply dummy text of the printing and typesetting industry.'
-    }
   ];
 
   const settings = {
@@ -104,7 +78,6 @@ const Projects = () => {
       },
     ],
   };
-  
 
   return (
     <ProjectContainer>
@@ -113,7 +86,9 @@ const Projects = () => {
         <Slider {...settings}>
           {images.map((image, index) => (
             <ImageCard key={index}>
-              <Image src={image.src} alt={image.alt || `Imagem ${index + 1}`} />
+              <a href={image.link} target="_blank" rel="noopener noreferrer">
+                <Image src={image.src} alt={image.alt || `Imagem ${index + 1}`} />
+              </a>
               <ImageTitle>{image.title}</ImageTitle>
               <Description>{image.description}</Description>
             </ImageCard>
