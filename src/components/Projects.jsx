@@ -76,7 +76,7 @@ const Projects = () => {
         },
       },
       {
-        breakpoint: 720,
+        breakpoint: 721,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

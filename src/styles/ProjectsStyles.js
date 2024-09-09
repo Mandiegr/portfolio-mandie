@@ -48,7 +48,7 @@ export const Image = styled.img`
     margin-left: 0;
   }
 
-  @media (max-width: 720px) and (min-width: 560px) {
+  @media (max-width: 721px) and (min-width: 560px) {
    width: 500px;
   }
   
