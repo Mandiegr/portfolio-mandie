@@ -46,21 +46,3 @@ export const NavLink = styled.a`
   }
 `;
 
-export const MenuButton = styled.button`
-  background: none;
-  border: none;
-  cursor: pointer;
-
-  span {
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: white;
-    margin: 6px 0;
-    transition: all 0.3s ease;
-  }
-
-  @media (max-width: 768px) {
-    display: block;
-  }
-`;
