@@ -20,12 +20,12 @@ const About = () => {
     <AboutContainer>
       <ContainerRight>
         <AboutImage src={mandie} alt="About me" />
-        <Title>Amanda Gomes Rebolsas, Engenheira de Software</Title>
+        <Title>Amanda Gomes Rebolsas, Engenheira de Software jr</Title>
         <AboutText>
-        Desenvolvedora Fullstack JavaScript com experiência sólida em desenvolvimento web e mobilidade,
-         utilizando tecnologias como React, Node.js e bancos de dados como PostgreSQL e MongoDB.
+        Desenvolvedora Fullstack JavaScript com experiência sólida em desenvolvimento web e mobile,
+         utilizando tecnologias como React, Nextjs, Node.js e bancos de dados como PostgreSQL,MongoDB e Firebase.
          Sou altamente motivada e comprometida com o aprendizado contínuo, sempre buscando aprimorar minhas
-          habilidades em Engenharia de Software e design de interface do usuário.
+          habilidades em Engenharia de Software e design de interface.
           Minhas experiências incluem a criação de componentes reutilizáveis, integração com APIs e colaboração em equipes ágeis,
            onde aprendi a importância da comunicação e da adaptabilidade. Estou ansiosa para aplicar meu conhecimento e habilidades
             em novos desafios, contribuindo para o sucesso de projetos inovadores.
