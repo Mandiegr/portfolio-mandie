@@ -1,4 +1,4 @@
-import { useState} from 'react';
+import { useState } from 'react';
 import Fullstack from './FullStack';
 import Design from './Design';
 import DataScience from './DataSciencie';
@@ -9,9 +9,10 @@ import {
   CategoryButton,  
   Title
 } from '../styles/ProjectsStyles';
+import { categoryTypesEnum } from '../utils';
 
 const Projects = () => {
-  const [activeCategory, setActiveCategory] = useState('fullstack');
+  const [activeCategory, setActiveCategory] = useState(categoryTypesEnum.Fullstack);
   const [loading, setLoading] = useState(false); 
 
   const handleCategoryChange = (category) => {
@@ -28,24 +29,24 @@ const Projects = () => {
         <span>Projects</span>
       </Title>
 
-      <CategoryContainer>
-        <CategoryButton onClick={() => handleCategoryChange('fullstack')}>
-          Fullstack Development
-        </CategoryButton>
-        <CategoryButton onClick={() => handleCategoryChange('design')}>
-          Web Design
-        </CategoryButton>
-      </CategoryContainer>
-
-      {loading ? (
-        <LoadingSpinner /> 
-      ) : (
+      {!loading && (
         <>
-          {activeCategory === 'fullstack' && <Fullstack />}
-          {activeCategory === 'design' && <Design />}
+          <CategoryContainer>
+            <CategoryButton onClick={() => handleCategoryChange(categoryTypesEnum.Fullstack)}>
+              Fullstack Development
+            </CategoryButton>
+            <CategoryButton onClick={() => handleCategoryChange(categoryTypesEnum.WebDesigner)}>
+              Web Design
+            </CategoryButton>
+          </CategoryContainer>
+
+          {activeCategory === categoryTypesEnum.Fullstack && <Fullstack />}
+          {activeCategory === categoryTypesEnum.WebDesigner && <Design />}
           {activeCategory === 'datascience' && <DataScience />}
         </>
       )}
+
+      {loading && <LoadingSpinner />}
     </ProjectContainer>
   );
 };
