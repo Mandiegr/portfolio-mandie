@@ -1,5 +1,5 @@
 import { Banner, NameContainer, TextContainer, IconContainer, Icon } from '../styles/HomeStyles';
-import { SiNextdotjs, SiJavascript, SiReact, SiTypescript, SiNodedotjs, SiFirebase, SiMongodb, SiMysql, SiSqlite, SiPython } from 'react-icons/si';
+import { SiNextdotjs, SiJavascript, SiReact, SiTypescript, SiNodedotjs, SiFirebase, SiMongodb, SiMysql, SiSqlite, SiPython, SiPostgresql } from 'react-icons/si';
 
 export const Home = () => {
   return (
@@ -22,6 +22,7 @@ export const Home = () => {
           <Icon as={SiSqlite}  />
           <Icon as={SiMysql}  />
           <Icon as={SiPython}  />
+          <Icon as={SiPostgresql}  />
         </IconContainer>
        {/** <Button>Explore</Button> */}
       </TextContainer>

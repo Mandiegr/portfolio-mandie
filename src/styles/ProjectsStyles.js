@@ -35,12 +35,19 @@ export const ImagesContainer = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 20px;
   color: white;
+  gap: 10px;
+  padding-top: 6rem;
 
   @media (max-width: 430px) {
     font-size: 2rem;
+  }
+
+  span{
+  
+
   }
 `;
 
@@ -72,4 +79,24 @@ export const ImageTitle = styled.h3`
 export const Description = styled.p`
   font-size: 1rem;
   color: white;
+`;
+export const CategoryContainer = styled.div`
+ // margin-bottom: 30px;
+  display: flex;
+ // flex-direction: c;
+`;
+
+export const CategoryButton = styled.div`
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: white;  //#ff66;
+    color: black;
+  }
 `;
