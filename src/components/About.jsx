@@ -20,7 +20,7 @@ const About = () => {
     <AboutContainer>
       <ContainerRight>
         <AboutImage src={mandie} alt="About me" />
-        <AboutMeTitle>About me</AboutMeTitle>
+        <Title>Amanda Gomes Rebolsas, Engenheira de Software</Title>
         <AboutText>
         Desenvolvedora Fullstack JavaScript com experiência sólida em desenvolvimento web e mobilidade,
          utilizando tecnologias como React, Node.js e bancos de dados como PostgreSQL e MongoDB.
@@ -30,6 +30,7 @@ const About = () => {
            onde aprendi a importância da comunicação e da adaptabilidade. Estou ansiosa para aplicar meu conhecimento e habilidades
             em novos desafios, contribuindo para o sucesso de projetos inovadores.
        </AboutText>
+       <AboutMeTitle>About me</AboutMeTitle>
       </ContainerRight>
 
       <TextContainer>

@@ -23,7 +23,7 @@ export const AboutContainer = styled.section`
 `;
 
 export const ContainerRight = styled.div`
-  width: 45%;
+  width: 35%;
   color: white;
  
   @media (max-width: 912px) {
@@ -33,6 +33,7 @@ export const ContainerRight = styled.div`
       padding-top: 50px;
     
   }
+
 
 `;
 
@@ -53,28 +54,26 @@ export const TextContainer = styled.div`
   @media (max-width: 912px) {
     width: 100%;
   }
+
+  @media (max-width: 768px) {
+    padding-top: 60px;
+  }
   @media (max-width: 414px) {
-      padding-top: 10px;
+      padding-top: 30px;
     
   }
 `;
 
 export const AboutImage = styled.img`
-  width: 30%;
+  width: 20%;
   height: auto;
   object-fit: cover;
 
-  @media (max-width: 540px) {
-    width: 20%;
-  }
-  @media (max-width: 540px) {
-   display: none; 
-  }
 
 `;
 
 export const AboutMeTitle = styled.h2`
-
+  font-size: 3rem;
   @media (max-width: 540px) {
     font-size: 1.5rem;
     margin-top: 1rem;
@@ -86,6 +85,7 @@ export const AboutText = styled.p`
   line-height: 1.5;
   margin-bottom: 1rem;
   letter-spacing: 0;
+  text-align: justify;
   @media (max-width: 768px) {
     font-size: 0.8rem;
   }
