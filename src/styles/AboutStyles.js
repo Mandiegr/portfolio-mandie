@@ -10,7 +10,7 @@ export const AboutContainer = styled.section`
   padding: 5rem;
   box-sizing: border-box;
 
-  @media (max-width: 884px) {
+  @media (max-width: 912px) {
     flex-direction: column;
     justify-content: center; 
      padding: 2rem;
@@ -22,17 +22,18 @@ export const AboutContainer = styled.section`
  
 `;
 
-export const ImageContainer = styled.div`
-  text-align: center;
-  width: 50%;
-  height: auto;
-  padding-top: 40px;
-
-  @media (max-width: 884px) {
+export const ContainerRight = styled.div`
+  width: 45%;
+  color: white;
+ 
+  @media (max-width: 912px) {
     width: 100%;
-    text-align: center;
-    top: -90px;
   }
+  @media (max-width: 375px) {
+      padding-top: 50px;
+    
+  }
+
 `;
 
 export const Title = styled.h2`
@@ -49,57 +50,47 @@ export const TextContainer = styled.div`
   width: 50%;
   color: white;
  
-  @media (max-width: 884px) {
+  @media (max-width: 912px) {
     width: 100%;
   }
-  @media (max-width: 375px) {
-      padding-top: 50px;
+  @media (max-width: 414px) {
+      padding-top: 10px;
     
   }
 `;
 
 export const AboutImage = styled.img`
-  width: 60%;
+  width: 30%;
   height: auto;
   object-fit: cover;
 
-  @media (max-width: 884px) {
-    width: 50%;
+  @media (max-width: 540px) {
+    width: 20%;
   }
   @media (max-width: 540px) {
-    width: 50%;
+   display: none; 
   }
-  @media (max-width: 375px) {
-    width: 50%;
-  }
+
 `;
 
 export const AboutMeTitle = styled.h2`
-  margin-top: 2rem;
-  font-size: 4rem;
-  color: white;
-  @media (max-width: 884px) {
-    font-size: 2.5rem;
-  }
-  @media (max-width: 540px) {
-   font-size: 2rem;
-  }
 
-  @media (max-width: 375px) {
+  @media (max-width: 540px) {
     font-size: 1.5rem;
     margin-top: 1rem;
   }
 `;
 
 export const AboutText = styled.p`
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 1rem;
   letter-spacing: 0;
   @media (max-width: 768px) {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 430px) {
     text-align: justify;
+    font-size: 0.7rem; 
   }
 `;

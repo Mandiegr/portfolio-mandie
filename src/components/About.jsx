@@ -1,7 +1,7 @@
 import mandie from "../../public/mandie.jpg";
 import {
   AboutContainer,
-  ImageContainer,
+  ContainerRight,
   TextContainer,
   AboutImage,
   AboutMeTitle,
@@ -18,10 +18,20 @@ const About = () => {
 
   return (
     <AboutContainer>
-      <ImageContainer>
+      <ContainerRight>
         <AboutImage src={mandie} alt="About me" />
         <AboutMeTitle>About me</AboutMeTitle>
-      </ImageContainer>
+        <AboutText>
+        Desenvolvedora Fullstack JavaScript com experiência sólida em desenvolvimento web e mobilidade,
+         utilizando tecnologias como React, Node.js e bancos de dados como PostgreSQL e MongoDB.
+         Sou altamente motivada e comprometida com o aprendizado contínuo, sempre buscando aprimorar minhas
+          habilidades em Engenharia de Software e design de interface do usuário.
+          Minhas experiências incluem a criação de componentes reutilizáveis, integração com APIs e colaboração em equipes ágeis,
+           onde aprendi a importância da comunicação e da adaptabilidade. Estou ansiosa para aplicar meu conhecimento e habilidades
+            em novos desafios, contribuindo para o sucesso de projetos inovadores.
+       </AboutText>
+      </ContainerRight>
+
       <TextContainer>
         <Title>Academic History</Title>
         <AboutText>
@@ -57,9 +67,6 @@ const About = () => {
           .full-stack Developer
           .Mobile Developer
           .Data analysis
-          .**** *******
-          .**** *******
-          .**** *******
         </AboutText>
         </div>
       </TextContainer>
