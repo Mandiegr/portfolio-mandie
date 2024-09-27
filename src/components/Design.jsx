@@ -43,30 +43,30 @@ const Design = () => {
   const images = [
     {
         src: '/Bakery.png',
-        alt: 'Eco-Buy',
-        title: 'Eco-Buy',
-        description: 'E-commerce: Nextjs, nodejs and Firebase',
+        alt: 'Bakery',
+        title: 'bakery layout',
+        description: ' bakery layout',
         link: 'https://bakery-three-sandy.vercel.app/',
       },
       {
         src: '/Kassis.png',
         alt: 'Eco-Buy',
         title: 'Kassis',
-        description: 'Webdesigner',
+        description: 'Product Landing Page',
         link: 'https://www.figma.com/board/163xU0sHLQ10BrWdKwdR82/kassis?node-id=0-1&t=xddyxYGbpDsNbne5-1',
       },
       {
         src: '/Bakery.png',
-        alt: 'Eco-Buy',
-        title: 'Eco-Buy',
-        description: 'E-commerce: Nextjs, nodejs and Firebase',
+        alt: 'Bakery',
+        title: 'bakery layout',
+        description: ' bakery layout',
         link: 'https://bakery-three-sandy.vercel.app/',
       },
       {
         src: '/Kassis.png',
-        alt: 'Eco-Buy',
+        alt: 'Kassis',
         title: 'Kassis',
-        description: 'Webdesigner',
+        description: 'Product Landing Page',
         link: 'https://www.figma.com/board/163xU0sHLQ10BrWdKwdR82/kassis?node-id=0-1&t=xddyxYGbpDsNbne5-1',
       }
     
