@@ -9,8 +9,6 @@ import {
   Title,
 
 } from '../styles/AboutStyles';
-import { SiNextdotjs, SiJavascript, SiReact, SiTypescript, SiNodedotjs, SiFirebase, SiMongodb, SiMysql, SiSqlite, SiPython } from 'react-icons/si';
-import {Icon, IconContainer} from '../styles/HomeStyles'
 const About = () => {
 
 
@@ -48,25 +46,6 @@ const About = () => {
         </AboutText>
 
         <div>
-          <Title>
-            Programming Languages:
-          </Title>
-        <IconContainer> 
-          <Icon as={SiJavascript}/>
-          <Icon as={SiReact}  />
-          <Icon as={SiTypescript}/>
-          <Icon as={SiNextdotjs} />
-          <Icon as={SiNodedotjs}/>
-          <Icon as={SiFirebase}/>
-          <Icon as={SiMongodb}/>
-          <Icon as={SiSqlite}/>
-          <Icon as={SiMysql} />
-          <Icon as={SiPython}/>
-          </IconContainer>
-        
-
-          <AboutText>
-          </AboutText>
 
           <Title>Skills</Title>
         <AboutText>
