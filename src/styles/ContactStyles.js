@@ -50,7 +50,6 @@ export const Description = styled.p`
 
 export const ContactDetails = styled.div`
   display: flex;
-  flex-direction: column;
   gap: 10px;
 `;
 
@@ -58,5 +57,6 @@ export const Detail = styled.div`
   font-size: 1rem;
   color: #ffffff;
   line-height: 1.5;
+  padding: 5px;
 `;
 
