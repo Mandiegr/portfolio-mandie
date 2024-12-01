@@ -65,11 +65,9 @@ export const TextContainer = styled.div`
 `;
 
 export const AboutImage = styled.img`
-  width: 20%;
+  width: 50%;
   height: auto;
   object-fit: cover;
-
-
 `;
 
 export const AboutMeTitle = styled.h2`
