@@ -26,6 +26,13 @@ const Fullstack = () => {
       link: 'https://eco-buy-phi.vercel.app/',
     },
     {
+      src: '/MoonMovies.png',
+      alt: 'Moon Movies',
+      title: 'Moon Movies',
+      description: 'consuming Api movies.db and hooks - FrontEnd architecture - Postgraduate ',
+      link: 'https://moon-movies-ojlg-git-main-mandiegrs-projects.vercel.app/',
+    },
+    {
       src: '/plannerA.png',
       alt: 'PlannerA',
       title: 'PlannerA',
