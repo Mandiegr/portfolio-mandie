@@ -4,6 +4,7 @@ export const MenuButton = styled.button`
   background: none;
   border: none;
   cursor: pointer;
+  display: none;
 
   span {
     display: block;

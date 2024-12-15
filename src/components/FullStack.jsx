@@ -12,40 +12,33 @@ import {
 const Fullstack = () => {
   const images = [
     {
-      src: '/task-manager.png',
+      src: '/task-manager.jpg',
       alt: 'Task-manager',
       title: 'Task-manager',
       description: 'Task Manager: React and SqlLite in the backend',
       link: 'https://github.com/Mandiegr/tasks-manager-frontend',
     },
     {
-      src: '/eco-buy.png',
+      src: '/eco-buy.jpg',
       alt: 'Eco-Buy',
       title: 'Eco-Buy',
       description: 'E-commerce: Nextjs, nodejs and Firebase',
       link: 'https://eco-buy-phi.vercel.app/',
     },
     {
-      src: '/MoonMovies.png',
+      src: '/MoonMovies.jpg',
       alt: 'Moon Movies',
       title: 'Moon Movies',
       description: 'consuming Api movies.db and hooks - FrontEnd architecture - Postgraduate ',
       link: 'https://moon-movies-ojlg-git-main-mandiegrs-projects.vercel.app/',
     },
     {
-      src: '/plannerA.png',
+      src: '/PlannerA.jpg',
       alt: 'PlannerA',
       title: 'PlannerA',
       description: 'Calendar with fullcalenadar, nextjs and firebase',
       link: 'https://agenda-vercel-21mk.vercel.app/',
     },
-    {
-        src: '/anon.png',
-        alt: 'anon',
-        title: 'Anon',
-        description: 'e-commerce with javascript, html and css',
-        link: 'https://e-commerce-anon.vercel.app/',
-      },
   ];
 
   const settings = {
