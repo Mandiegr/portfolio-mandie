@@ -1,15 +1,16 @@
 import { useState } from 'react';
 import Fullstack from './FullStack';
 import Design from './Design';
-import DataScience from './DataSciencie';
+
 import LoadingSpinner from './Loading';
 import { 
   ProjectContainer,  
   CategoryContainer, 
   CategoryButton,  
-  Title
+  IconWrapper
 } from '../styles/ProjectsStyles';
 import { categoryTypesEnum } from '../utils';
+import { FaDesktop, FaLaptop } from 'react-icons/fa';  // Ícones do Font Awesome
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState(categoryTypesEnum.Fullstack);
@@ -25,24 +26,24 @@ const Projects = () => {
 
   return (
     <ProjectContainer>
-      <Title>
-        <span>Projects</span>
-      </Title>
+   
 
       {!loading && (
         <>
           <CategoryContainer>
             <CategoryButton onClick={() => handleCategoryChange(categoryTypesEnum.Fullstack)}>
+              <IconWrapper><FaDesktop size={20} /></IconWrapper>
               Fullstack Development
             </CategoryButton>
             <CategoryButton onClick={() => handleCategoryChange(categoryTypesEnum.WebDesigner)}>
+              <IconWrapper><FaLaptop size={20} /></IconWrapper>
               Web Design
             </CategoryButton>
+            
           </CategoryContainer>
 
           {activeCategory === categoryTypesEnum.Fullstack && <Fullstack />}
           {activeCategory === categoryTypesEnum.WebDesigner && <Design />}
-          {activeCategory === 'datascience' && <DataScience />}
         </>
       )}
 

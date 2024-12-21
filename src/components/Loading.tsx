@@ -29,7 +29,7 @@ const SpinnerContainer = styled.div`
 
 const Spinner = styled.div`
   border: 4px solid rgba(0, 0, 0, 0.1);
-  border-left-color: #c26b07;
+  border-left-color: #4851B3;
   border-radius: 50%;
   width: 40px;
   height: 40px;

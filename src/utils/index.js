@@ -1,1 +1,1 @@
-export const categoryTypesEnum = { "Fullstack":1, "WebDesigner":2}
+export const categoryTypesEnum = { "Fullstack":1, "WebDesigner":2, "Mobile":3}

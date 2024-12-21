@@ -24,8 +24,7 @@ export const MenuItemsContainer = styled.div`
   position: absolute;
   top: 70px;
   right: -10px;
-  background-color: #161616;
-  border-radius: 5px;
+  background: linear-gradient(360deg, #4851B3 ,#42203F);
   display: flex;
   flex-direction: column;
   align-items: center;

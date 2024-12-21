@@ -1,31 +1,61 @@
-import { Banner, NameContainer, TextContainer, IconContainer, Icon } from '../styles/HomeStyles';
-import { SiNextdotjs, SiJavascript, SiReact, SiTypescript, SiNodedotjs, SiFirebase, SiMongodb, SiMysql, SiSqlite, SiPython, SiPostgresql } from 'react-icons/si';
+import { 
+  ContainerLeft, 
+  ContainerRight, 
+  ContainerHome, 
+  NameContainer, 
+  TextContainer, 
+  Resume, 
+  IconContainer, 
+  Icon 
+} from '../styles/HomeStyles';
+
+import { 
+  SiNextdotjs, 
+  SiJavascript, 
+  SiReact, 
+  SiTypescript, 
+  SiNodedotjs, 
+  SiFirebase, 
+  SiMongodb, 
+  SiMysql, 
+  SiSqlite, 
+  SiPython, 
+  SiPostgresql 
+} from 'react-icons/si';
 
 export const Home = () => {
   return (
-    <Banner>
-      <NameContainer>
-        <p>Software</p>
-        <p>Engineer</p>
-      </NameContainer>
-
-      <TextContainer>
-        <h2>Main languages:</h2>
-        <IconContainer>
-        <Icon as={SiJavascript}  />
-          <Icon as={SiReact}  />
-          <Icon as={SiTypescript}  />
-          <Icon as={SiNextdotjs}  />
-          <Icon as={SiNodedotjs}  />
-          <Icon as={SiFirebase}  />
-          <Icon as={SiMongodb}  />
-          <Icon as={SiSqlite}  />
-          <Icon as={SiMysql}  />
-          <Icon as={SiPython}  />
-          <Icon as={SiPostgresql}  />
-        </IconContainer>
-       {/** <Button>Explore</Button> */}
-      </TextContainer>
-    </Banner>
+    <ContainerHome>
+      <ContainerLeft>
+        <NameContainer>
+          <p>Software Engineer</p>
+        </NameContainer>
+        <Resume>
+          Desenvolvedora Fullstack JavaScript com experiência sólida em desenvolvimento web e mobile, 
+          utilizando tecnologias como JavaScript, React, React Native, Nextjs, Node.js e bancos de dados 
+          como PostgreSQL, MongoDB e Firebase.
+        </Resume>
+        <TextContainer>
+          <h2>Main Skills:</h2>
+          <IconContainer>
+            <Icon as={SiJavascript} />
+            <Icon as={SiReact} />
+            <Icon as={SiTypescript} />
+            <Icon as={SiNextdotjs} />
+            <Icon as={SiNodedotjs} />
+            <Icon as={SiFirebase} />
+            <Icon as={SiMongodb} />
+            <Icon as={SiSqlite} />
+            <Icon as={SiMysql} />
+            <Icon as={SiPython} />
+            <Icon as={SiPostgresql} />
+          </IconContainer>
+        </TextContainer>
+      </ContainerLeft>
+      
+      <ContainerRight>
+        <img src="./mandie.png" alt="Profile" />
+      </ContainerRight>
+    </ContainerHome>
   );
 };

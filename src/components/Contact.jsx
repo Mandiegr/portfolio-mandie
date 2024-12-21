@@ -15,12 +15,11 @@ const Contact = () => {
     <ContactContainer>
       <LeftSide>
         <Image
-          src="https://i.pinimg.com/736x/7e/27/b8/7e27b83d20d3a2f620ead913b96d0121.jpg"
-          alt="Contato"
+         
         />
       </LeftSide>
       <RightSide>
-        <Title>Contacts</Title>
+        <Title>Contato</Title>
         <Description>Entre em contato comigo pelos meios abaixo:</Description>
         <ContactDetails>
           <Detail>
@@ -32,7 +31,7 @@ const Contact = () => {
             >
               <SiWhatsapp
                 size={30}
-                color="#ffffff"
+                color="#4851B3 "
                 style={{ cursor: "pointer" }}
               />
             </a>
@@ -46,7 +45,7 @@ const Contact = () => {
             >
               <SiGmail
                 size={30}
-                color="#ffffff"
+                color="#4851B3 "
                 style={{ cursor: "pointer" }}
               />
             </a>
@@ -60,7 +59,7 @@ const Contact = () => {
             >
               <SiLinkedin
                 size={30}
-                color="#ffffff"
+                color="#4851B3 "
                 style={{ cursor: "pointer" }}
               />
             </a>
