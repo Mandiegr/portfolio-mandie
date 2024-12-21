@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -8,8 +7,6 @@ export const ProjectContainer = styled.div`
   justify-content: center;
   width: 100%;
   padding: 3rem;
-
-  border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   animation: fadeIn 1s ease-out;
 `;
@@ -46,6 +43,10 @@ export const CategoryButton = styled.div`
   &:active {
     transform: scale(0.98);
   }
+
+  @media (max-width: 720px) {
+    padding: 10px 25px;
+  }
 `;
 
 export const IconWrapper = styled.div`
@@ -71,15 +72,12 @@ export const Title = styled.h1`
   @media (max-width: 430px) {
     font-size: 2.5rem;
   }
-
-
 `;
 
 export const CarouselContainer = styled.div`
   width: 100%;
   height: 60%;
   padding: 20px;
- 
   margin-bottom: 40px;
   animation: slideIn 1s ease-out;
 
@@ -88,28 +86,10 @@ export const CarouselContainer = styled.div`
   }
 `;
 
-export const ImagesContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  width: 100%;
-  margin-bottom: 20px;
-  animation: fadeInUp 1s ease-out;
-
-  @media (max-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 720px) {
-    grid-template-columns: 1fr;
-  }
-`;
-
 export const Image = styled.img`
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 10px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 
   &:hover {
@@ -126,10 +106,7 @@ export const ImageCard = styled.div`
     padding: 20px;
   }
 
-  &:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
-  }
+ 
 `;
 
 export const ImageTitle = styled.h3`
@@ -157,4 +134,3 @@ export const LoadingSpinner = styled.div`
   margin-top: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 `;
-

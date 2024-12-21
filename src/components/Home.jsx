@@ -20,7 +20,12 @@ import {
   SiMysql, 
   SiSqlite, 
   SiPython, 
-  SiPostgresql 
+  SiPostgresql, 
+  SiCsharp,
+  SiPhp,
+  SiCss3,
+  SiHtml5,
+  SiFigma
 } from 'react-icons/si';
 
 export const Home = () => {
@@ -38,23 +43,28 @@ export const Home = () => {
         <TextContainer>
           <h2>Main Skills:</h2>
           <IconContainer>
-            <Icon as={SiJavascript} />
-            <Icon as={SiReact} />
-            <Icon as={SiTypescript} />
-            <Icon as={SiNextdotjs} />
-            <Icon as={SiNodedotjs} />
-            <Icon as={SiFirebase} />
-            <Icon as={SiMongodb} />
-            <Icon as={SiSqlite} />
-            <Icon as={SiMysql} />
-            <Icon as={SiPython} />
-            <Icon as={SiPostgresql} />
+              <Icon as={SiFigma} />
+              <Icon as={SiHtml5} />
+              <Icon as={SiCss3} />
+              <Icon as={SiJavascript} />
+              <Icon as={SiReact} />
+              <Icon as={SiTypescript} />
+              <Icon as={SiNextdotjs} />
+              <Icon as={SiNodedotjs} />
+              <Icon as={SiFirebase} />
+              <Icon as={SiMongodb} />
+              <Icon as={SiSqlite} />
+              <Icon as={SiMysql} />
+              <Icon as={SiPostgresql} />
+              <Icon as={SiPython} />
+              <Icon as={SiCsharp} />
+              <Icon as={SiPhp} />
           </IconContainer>
         </TextContainer>
       </ContainerLeft>
       
       <ContainerRight>
-        <img src="./mandie.png" alt="Profile" />
+        <img src="./mandii.png" alt="Profile" />
       </ContainerRight>
     </ContainerHome>
   );

@@ -10,7 +10,7 @@ import {
   IconWrapper
 } from '../styles/ProjectsStyles';
 import { categoryTypesEnum } from '../utils';
-import { FaDesktop, FaLaptop } from 'react-icons/fa';  // Ícones do Font Awesome
+import { FaDesktop, FaLaptop } from 'react-icons/fa'; 
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState(categoryTypesEnum.Fullstack);
@@ -33,7 +33,7 @@ const Projects = () => {
           <CategoryContainer>
             <CategoryButton onClick={() => handleCategoryChange(categoryTypesEnum.Fullstack)}>
               <IconWrapper><FaDesktop size={20} /></IconWrapper>
-              Fullstack Development
+              Fullstack 
             </CategoryButton>
             <CategoryButton onClick={() => handleCategoryChange(categoryTypesEnum.WebDesigner)}>
               <IconWrapper><FaLaptop size={20} /></IconWrapper>

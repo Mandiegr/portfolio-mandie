@@ -37,14 +37,14 @@ const Fullstack = () => {
       alt: 'PlannerA',
       title: 'PlannerA',
       description: 'Calendar with fullcalenadar, nextjs and firebase',
-      link: 'https://agenda-vercel-21mk.vercel.app/',
+      link: 'https://planner-a.vercel.app/',
     },
   ];
 
   const settings = {
     infinite: true,
-    speed: 300,
-    slidesToShow: 3,
+    speed: 100,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     arrows: false,
@@ -52,7 +52,7 @@ const Fullstack = () => {
       {
         breakpoint: 1281,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: false,

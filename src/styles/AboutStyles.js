@@ -2,12 +2,13 @@ import styled from 'styled-components';
 
 export const AboutContainer = styled.section`
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100vh;
   padding: 2rem;
-  background-color: #fff;
+  background: linear-gradient(135deg, #4851B3 ,#fff);
+
+
 
   @media (max-width: 912px) {
     flex-direction: column;
@@ -36,7 +37,14 @@ export const ContainerLeft = styled.div`
 
   @media (max-width: 912px) {
     width: 100%;
-  }
+    margin-top: 10rem;
+  }  
+
+  @media (max-width: 768px) {
+    width: 100%;
+    
+   
+  } 
 `;
 
 export const ContainerRight = styled.div`
@@ -45,7 +53,7 @@ export const ContainerRight = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  
 
   @media (max-width: 912px) {
     width: 100%;
@@ -93,7 +101,7 @@ export const ContentDisplay = styled.div`
   min-height: 200px;
 
   h3 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
     color: #4851b3;
   }

@@ -31,7 +31,7 @@ const Contact = () => {
             >
               <SiWhatsapp
                 size={30}
-                color="#4851B3 "
+                color="#fff"
                 style={{ cursor: "pointer" }}
               />
             </a>
@@ -45,7 +45,7 @@ const Contact = () => {
             >
               <SiGmail
                 size={30}
-                color="#4851B3 "
+                color="#fff"
                 style={{ cursor: "pointer" }}
               />
             </a>
@@ -59,7 +59,7 @@ const Contact = () => {
             >
               <SiLinkedin
                 size={30}
-                color="#4851B3 "
+                color="#fff"
                 style={{ cursor: "pointer" }}
               />
             </a>

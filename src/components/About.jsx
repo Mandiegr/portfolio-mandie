@@ -3,6 +3,7 @@ import {
   FaGraduationCap,
   FaTools,
   FaHandsHelping,
+  FaBriefcase,
 } from 'react-icons/fa';
 import {
   SiHtml5,
@@ -24,16 +25,13 @@ import {
 } from 'react-icons/si';
 import {
   AboutContainer,
-  ContainerLeft,
   ContainerRight,
   IconButtons,
   IconButton,
   ContentDisplay,
   IconContainer,
   Icon,
-  AboutMeTitle,
-  AboutText,
-  Title,
+
 } from '../styles/AboutStyles';
 
 const About = () => {
@@ -46,15 +44,16 @@ const About = () => {
           <ContentDisplay>
             <h3>Histórico Acadêmico</h3>
             <p>
-              Tecnóloga em Análise e Desenvolvimento de Sistemas - Universidade
+              
+            <FaGraduationCap color='#4851B3' />  Tecnóloga em Análise e Desenvolvimento de Sistemas - Universidade
               da Amazônia - UNAMA - 2022
             </p>
             <p>
-              Pós-Graduação em Engenharia de Software - PUC Minas -
+            <FaGraduationCap color='#4851B3' /> Pós-Graduação em Engenharia de Software - PUC Minas -
               2024-2025
             </p>
             <p>
-              Pós-Graduação Lato Sensu em Docência na Educação Profissional e
+            <FaGraduationCap color='#4851B3' />  Pós-Graduação Lato Sensu em Docência na Educação Profissional e
               Tecnológica (DocenEPT) - IFPA - 2025-2026
             </p>
           </ContentDisplay>
@@ -100,6 +99,29 @@ const About = () => {
             
           </ContentDisplay>
         );
+        case 'work':
+          return (
+            <ContentDisplay>
+  
+                <h3>Desenvolvedora Reactjs/React Native Jr</h3>
+                <h3>EG SOftwares</h3>
+                <h3>13 maio de 2023 - atualmente</h3>
+                <p>
+                Desenvolvimento de Componentes de Interface do Usuário: Criação de componentes
+                reutilizáveis e modulares em React e React Native, garantindo uma interface de
+                usuário intuitiva e responsiva.
+                Integração com APIs e Serviços Backend: Realização de chamadas API para
+                integração com serviços backend, utilizando bibliotecas como Axios, e
+                gerenciamento de estado com Redux ou Context API.
+                Colaboração em processo de revisão de código, garantindo a qualidade e
+                consistência do código produzido.
+
+                </p>
+             
+              
+              
+            </ContentDisplay>
+          );
       default:
         return (
           <ContentDisplay>
@@ -114,22 +136,6 @@ const About = () => {
 
   return (
     <AboutContainer>
-      <ContainerLeft>
-        <AboutText>
-          <AboutMeTitle>Experiência Profissional</AboutMeTitle>
-          <Title>EG Softwares</Title>
-          <Title>Desenvolvedora Reactjs/React Native Jr</Title>
-          <Title>13 maio de 2023 - atualmente </Title>
-          Desenvolvimento de Componentes de Interface do Usuário: Criação de componentes
-          reutilizáveis e modulares em React e React Native, garantindo uma interface de
-          usuário intuitiva e responsiva.
-          Integração com APIs e Serviços Backend: Realização de chamadas API para
-          integração com serviços backend, utilizando bibliotecas como Axios, e
-          gerenciamento de estado com Redux ou Context API.
-          Colaboração em processo de revisão de código, garantindo a qualidade e
-          consistência do código produzido.
-        </AboutText>
-      </ContainerLeft>
       <ContainerRight>
         <IconButtons>
           <IconButton
@@ -153,7 +159,21 @@ const About = () => {
              <FaHandsHelping />
             <span>Soft Skill</span>
           </IconButton>
+
+          <IconButton
+            onClick={() => setActiveContent('work')}
+            active={activeContent === 'work'}
+          >
+             <FaBriefcase />
+            <span>Work</span>
+          </IconButton>
+
+          
         </IconButtons>
+
+        
+
+        
         {renderContent()}
       </ContainerRight>
     </AboutContainer>

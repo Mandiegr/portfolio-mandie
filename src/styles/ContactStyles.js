@@ -7,7 +7,7 @@ export const ContactContainer = styled.div`
   justify-content: center;
   width: 100vw;
   padding: 40px;
-  background: #ffff;
+  background: linear-gradient(135deg, #4851B3 ,#fff);
 `;
 
 export const LeftSide = styled.div`
@@ -18,7 +18,7 @@ export const LeftSide = styled.div`
 
 export const Image = styled.div`
   width: 80%;
-  background: linear-gradient(300deg, #4851B3 ,#42203F);
+  background: #4851B3 ;
   
   max-width: 400px;
   height: 100vh;
@@ -36,7 +36,7 @@ export const RightSide = styled.div`
 
 export const Title = styled.h1`
   font-size: 4rem;
-  color: #4851B3 ;
+  color: #fff ;
   margin-bottom: 10px;
 
   @media (max-width: 419px) {
@@ -48,7 +48,7 @@ export const Title = styled.h1`
 export const Description = styled.p`
   font-size: 1.2rem;
   margin-bottom: 20px;
-  color: #4851B3 ;
+  color: #fff ;
 `;
 
 export const ContactDetails = styled.div`
@@ -58,7 +58,7 @@ export const ContactDetails = styled.div`
 
 export const Detail = styled.div`
   font-size: 1rem;
-  color: #4851B3 ;
+  color: #fff ;
   line-height: 1.5;
   padding: 5px;
 `;
