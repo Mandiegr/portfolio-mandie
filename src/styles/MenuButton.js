@@ -36,10 +36,10 @@ export const MenuItemsContainer = styled.div`
     margin: 10px 0;
     font-size: 1.2rem;
     text-decoration: none;
-    transition: color 0.3s;
+    text-decoration-line: none; 
 
     &:hover {
-      color: chocolate;
+      transform: scale(1.2);
     }
   }
 

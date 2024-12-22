@@ -64,7 +64,7 @@ export const Home = () => {
       </ContainerLeft>
       
       <ContainerRight>
-        <img src="./mandii.png" alt="Profile" />
+        <img src="./mandie.png" alt="Profile" />
       </ContainerRight>
     </ContainerHome>
   );

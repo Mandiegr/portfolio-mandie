@@ -22,8 +22,8 @@ export const ContainerLeft = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 2rem;
- background:  rgba(96, 78, 199, 0.3);
- color: white;
+  background:  rgba(96, 78, 199, 0.3);
+  color: white;
 
   @media (max-width: 768px) {
     order: 2;
